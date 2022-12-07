@@ -1,0 +1,15 @@
+C:\Users\vhfn2\source\repos\SYSBIBLIO\SYSBIBLIO\bin\Debug\SYSBIBLIO.exe.config
+C:\Users\vhfn2\source\repos\SYSBIBLIO\SYSBIBLIO\bin\Debug\SYSBIBLIO.exe
+C:\Users\vhfn2\source\repos\SYSBIBLIO\SYSBIBLIO\bin\Debug\SYSBIBLIO.pdb
+C:\Users\vhfn2\source\repos\SYSBIBLIO\SYSBIBLIO\bin\Debug\Guna.UI2.dll
+C:\Users\vhfn2\source\repos\SYSBIBLIO\SYSBIBLIO\obj\Debug\SYSBIBLIO.csproj.AssemblyReference.cache
+C:\Users\vhfn2\source\repos\SYSBIBLIO\SYSBIBLIO\obj\Debug\SYSBIBLIO.Properties.Resources.resources
+C:\Users\vhfn2\source\repos\SYSBIBLIO\SYSBIBLIO\obj\Debug\SYSBIBLIO.View.FrmCadLivro.resources
+C:\Users\vhfn2\source\repos\SYSBIBLIO\SYSBIBLIO\obj\Debug\SYSBIBLIO.View.FrmEmprestimos.resources
+C:\Users\vhfn2\source\repos\SYSBIBLIO\SYSBIBLIO\obj\Debug\SYSBIBLIO.View.FrmHome.resources
+C:\Users\vhfn2\source\repos\SYSBIBLIO\SYSBIBLIO\obj\Debug\SYSBIBLIO.View.FrmLogin.resources
+C:\Users\vhfn2\source\repos\SYSBIBLIO\SYSBIBLIO\obj\Debug\SYSBIBLIO.csproj.GenerateResource.cache
+C:\Users\vhfn2\source\repos\SYSBIBLIO\SYSBIBLIO\obj\Debug\SYSBIBLIO.csproj.CoreCompileInputs.cache
+C:\Users\vhfn2\source\repos\SYSBIBLIO\SYSBIBLIO\obj\Debug\SYSBIBLIO.csproj.CopyComplete
+C:\Users\vhfn2\source\repos\SYSBIBLIO\SYSBIBLIO\obj\Debug\SYSBIBLIO.exe
+C:\Users\vhfn2\source\repos\SYSBIBLIO\SYSBIBLIO\obj\Debug\SYSBIBLIO.pdb
