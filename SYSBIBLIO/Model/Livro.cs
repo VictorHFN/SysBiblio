@@ -14,5 +14,7 @@ namespace SYSBIBLIO.Model
         public string SinopseLivro { get; set; }
         public DateTime DataPublicacao { get; set; }
         public int QuantidadeLivro { get; set; }
+
+        public Livro() { }
     }
 }

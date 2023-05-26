@@ -50,11 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection\BancoDAO.cs" />
-    <Compile Include="Connection\Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
     <Compile Include="Controller\LoginController.cs" />
     <Compile Include="Model\Administrador.cs" />
     <Compile Include="Model\Autor.cs" />
@@ -68,23 +63,28 @@
     <Compile Include="Model\Login.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SysBiblioDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SysBiblioDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="View\FrmCadLivro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FrmCadLivro.Designer.cs">
       <DependentUpon>FrmCadLivro.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FrmEmprestimos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\FrmEmprestimos.Designer.cs">
-      <DependentUpon>FrmEmprestimos.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FrmHome.Designer.cs">
       <DependentUpon>FrmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmListarLivro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmListarLivro.Designer.cs">
+      <DependentUpon>FrmListarLivro.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FrmLogin.cs">
       <SubType>Form</SubType>
@@ -104,20 +104,15 @@
     <EmbeddedResource Include="View\FrmCadLivro.resx">
       <DependentUpon>FrmCadLivro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FrmEmprestimos.resx">
-      <DependentUpon>FrmEmprestimos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmListarLivro.resx">
+      <DependentUpon>FrmListarLivro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Connection\app.config" />
-    <None Include="Connection\Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -128,6 +123,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SysBiblioDataSet.xsc">
+      <DependentUpon>SysBiblioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SysBiblioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SysBiblioDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SysBiblioDataSet.xss">
+      <DependentUpon>SysBiblioDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

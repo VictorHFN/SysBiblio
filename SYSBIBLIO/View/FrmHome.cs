@@ -24,9 +24,7 @@ namespace SYSBIBLIO.View
 
         private void btnEmprestimo_Click(object sender, EventArgs e)
         {
-            FrmEmprestimos emp = new FrmEmprestimos();
-            emp.Show();
-            Close();
+            
         }
 
         private void btnEncerrar_Click(object sender, EventArgs e)
@@ -38,9 +36,21 @@ namespace SYSBIBLIO.View
 
         private void btnCadastro_Click(object sender, EventArgs e)
         {
-            FrmCadLivro clivro= new FrmCadLivro();
+            FrmCadLivro clivro = new FrmCadLivro();
             clivro.Show();
             Close();
+        }
+
+        private void btnCadLeitor_Click(object sender, EventArgs e)
+        {
+            FrmListarLivro liLivro = new FrmListarLivro();
+            liLivro.Show();
+            Close();
+        }
+
+        private void guna2PictureBox3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

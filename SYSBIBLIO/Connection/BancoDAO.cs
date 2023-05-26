@@ -11,9 +11,10 @@ using SYSBIBLIO.Model;
 
 namespace SYSBIBLIO.Connection
 {
-    public class BancoDAO
+    public static class BancoDAO
     {
-       
+
+       //SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-S6Q1RKC;Initial Catalog=SysBiblio;Integrated Security=True");
         private static SqlConnection con;
         private static string sql;
         private static SqlCommand cmd;
@@ -21,19 +22,18 @@ namespace SYSBIBLIO.Connection
         public static void InserirLivro(Livro livro)
         {
             // Comando para inserir na tabela do banco de dados
-            sql = "INSERT INTO livro(codigoLivro, nomeLivro, edicaoLivvro, sinopseLivro, dataPublicacao, quantidadeLivro) VALUES (" +
-                "@codigo," +
+            sql = "INSERT INTO livro(, nomeLivro, edicaoLivvro, sinopseLivro, dataPublicacao, quantidadeLivro) VALUES (" +
+               
                 "@nome," +
                 "@edicao," +
                 "@sinopse," +
                 "@dataPublicacao," +
-                "@quantidade"; 
+                "@quantidade)"; 
             con.Open();
             SqlCommand sqlCommand1 = new SqlCommand(sql, con);
             SqlCommand sqlCommand = sqlCommand1;
             cmd = sqlCommand;
             // Inserindo os dados do C# no comando para ser executado no banco de dados
-            cmd.Parameters.Add(new SqlParameter("@codigo", SqlDbType.VarChar, 13)).Value = livro.CodigoLivro;
             cmd.Parameters.Add(new SqlParameter("@nome", SqlDbType.VarChar, 50)).Value = livro.NomeLivro;
             cmd.Parameters.Add(new SqlParameter("@edicao", SqlDbType.VarChar, 30)).Value = livro.EdicaoLivro;
             cmd.Parameters.Add(new SqlParameter("@sinopse", SqlDbType.VarChar, 50)).Value = livro.SinopseLivro;
@@ -108,7 +108,7 @@ namespace SYSBIBLIO.Connection
 
         public static void ExcluirLivros()
         {
-            sql = "DELETE FROM livro";
+            sql = "DELETE FROM Livro";
             con.Open();
             cmd = new SqlCommand(sql, con);
             ExecutarSemConsulta();
@@ -129,10 +129,10 @@ namespace SYSBIBLIO.Connection
 
         public static void ExcluirLivro(string codigo)
         {
-            sql = "DELETE FROM livro WHERE codigo = @codigo";
+            sql = "DELETE FROM Livro WHERE codigo = codigoLivro";
             con.Open();
             cmd = new SqlCommand(sql, con);
-            cmd.Parameters.Add(new SqlParameter("@codigo", SqlDbType.VarChar, 13)).Value = codigo;
+            cmd.Parameters.Add(new SqlParameter("codigoLivro", SqlDbType.Int, 13)).Value = codigo;
             ExecutarSemConsulta();
             FecharConexao();
         }

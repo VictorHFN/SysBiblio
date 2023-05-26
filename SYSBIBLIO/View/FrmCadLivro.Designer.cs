@@ -30,14 +30,13 @@ namespace SYSBIBLIO.View
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCadLivro));
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_ListLivro = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnHomeP = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.dt_DataP = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txbQuantidade = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblQunt = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txbDtP = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txbEdicao = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -46,36 +45,30 @@ namespace SYSBIBLIO.View
             this.txbNomeL = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblCadL = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btn_CadL = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel1.SuspendLayout();
+            this.btnCad = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.btn_ListLivro);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel1.Controls.Add(this.btnHomeP);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(250, 785);
-            this.guna2Panel1.TabIndex = 1;
             // 
             // btn_ListLivro
             // 
-            this.btn_ListLivro.BackColor = System.Drawing.Color.White;
+            this.btn_ListLivro.BackColor = System.Drawing.Color.MediumTurquoise;
             this.btn_ListLivro.BorderRadius = 6;
             this.btn_ListLivro.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_ListLivro.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_ListLivro.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_ListLivro.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_ListLivro.FillColor = System.Drawing.Color.RoyalBlue;
+            this.btn_ListLivro.FillColor = System.Drawing.Color.DarkCyan;
             this.btn_ListLivro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ListLivro.ForeColor = System.Drawing.Color.White;
             this.btn_ListLivro.Image = ((System.Drawing.Image)(resources.GetObject("btn_ListLivro.Image")));
             this.btn_ListLivro.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_ListLivro.Location = new System.Drawing.Point(10, 207);
+            this.btn_ListLivro.Location = new System.Drawing.Point(12, 108);
             this.btn_ListLivro.Name = "btn_ListLivro";
             this.btn_ListLivro.Size = new System.Drawing.Size(227, 45);
             this.btn_ListLivro.TabIndex = 26;
@@ -86,8 +79,8 @@ namespace SYSBIBLIO.View
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(73, 78);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(83, 22);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(85, 26);
             this.guna2HtmlLabel1.TabIndex = 25;
@@ -95,28 +88,29 @@ namespace SYSBIBLIO.View
             // 
             // btnHomeP
             // 
-            this.btnHomeP.BackColor = System.Drawing.Color.White;
+            this.btnHomeP.BackColor = System.Drawing.Color.MediumTurquoise;
             this.btnHomeP.BorderRadius = 6;
             this.btnHomeP.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnHomeP.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnHomeP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnHomeP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHomeP.FillColor = System.Drawing.Color.RoyalBlue;
+            this.btnHomeP.FillColor = System.Drawing.Color.DarkCyan;
             this.btnHomeP.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHomeP.ForeColor = System.Drawing.Color.White;
             this.btnHomeP.Image = ((System.Drawing.Image)(resources.GetObject("btnHomeP.Image")));
             this.btnHomeP.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnHomeP.Location = new System.Drawing.Point(10, 697);
+            this.btnHomeP.Location = new System.Drawing.Point(12, 598);
             this.btnHomeP.Name = "btnHomeP";
             this.btnHomeP.Size = new System.Drawing.Size(227, 45);
             this.btnHomeP.TabIndex = 1;
             this.btnHomeP.Text = "Home";
+            this.btnHomeP.Click += new System.EventHandler(this.btnHomeP_Click);
             // 
             // guna2Panel4
             // 
+            this.guna2Panel4.Controls.Add(this.dt_DataP);
             this.guna2Panel4.Controls.Add(this.txbQuantidade);
             this.guna2Panel4.Controls.Add(this.lblQunt);
-            this.guna2Panel4.Controls.Add(this.txbDtP);
             this.guna2Panel4.Controls.Add(this.guna2HtmlLabel11);
             this.guna2Panel4.Controls.Add(this.txbEdicao);
             this.guna2Panel4.Controls.Add(this.guna2HtmlLabel12);
@@ -128,6 +122,21 @@ namespace SYSBIBLIO.View
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(1017, 473);
             this.guna2Panel4.TabIndex = 30;
+            // 
+            // dt_DataP
+            // 
+            this.dt_DataP.BorderRadius = 15;
+            this.dt_DataP.Checked = true;
+            this.dt_DataP.FillColor = System.Drawing.Color.DarkCyan;
+            this.dt_DataP.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dt_DataP.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dt_DataP.Location = new System.Drawing.Point(715, 95);
+            this.dt_DataP.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dt_DataP.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dt_DataP.Name = "dt_DataP";
+            this.dt_DataP.Size = new System.Drawing.Size(263, 36);
+            this.dt_DataP.TabIndex = 16;
+            this.dt_DataP.Value = new System.DateTime(2022, 12, 7, 21, 40, 39, 423);
             // 
             // txbQuantidade
             // 
@@ -158,30 +167,11 @@ namespace SYSBIBLIO.View
             this.lblQunt.TabIndex = 12;
             this.lblQunt.Text = "Quantidade";
             // 
-            // txbDtP
-            // 
-            this.txbDtP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbDtP.DefaultText = "";
-            this.txbDtP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txbDtP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txbDtP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbDtP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbDtP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbDtP.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txbDtP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbDtP.Location = new System.Drawing.Point(757, 95);
-            this.txbDtP.Name = "txbDtP";
-            this.txbDtP.PasswordChar = '\0';
-            this.txbDtP.PlaceholderText = "";
-            this.txbDtP.SelectedText = "";
-            this.txbDtP.Size = new System.Drawing.Size(182, 23);
-            this.txbDtP.TabIndex = 9;
-            // 
             // guna2HtmlLabel11
             // 
             this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(594, 95);
+            this.guna2HtmlLabel11.Location = new System.Drawing.Point(548, 95);
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             this.guna2HtmlLabel11.Size = new System.Drawing.Size(136, 23);
             this.guna2HtmlLabel11.TabIndex = 8;
@@ -278,59 +268,100 @@ namespace SYSBIBLIO.View
             // 
             this.lblCadL.BackColor = System.Drawing.Color.Transparent;
             this.lblCadL.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadL.Location = new System.Drawing.Point(629, 60);
+            this.lblCadL.ForeColor = System.Drawing.Color.White;
+            this.lblCadL.Location = new System.Drawing.Point(523, 33);
             this.lblCadL.Name = "lblCadL";
             this.lblCadL.Size = new System.Drawing.Size(218, 32);
             this.lblCadL.TabIndex = 32;
             this.lblCadL.Text = "Cadastro de livros";
             // 
-            // btn_CadL
+            // btnCad
             // 
-            this.btn_CadL.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_CadL.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_CadL.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_CadL.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_CadL.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_CadL.ForeColor = System.Drawing.Color.White;
-            this.btn_CadL.Location = new System.Drawing.Point(319, 697);
-            this.btn_CadL.Name = "btn_CadL";
-            this.btn_CadL.Size = new System.Drawing.Size(180, 45);
-            this.btn_CadL.TabIndex = 33;
-            this.btn_CadL.Text = "cadastro";
-            this.btn_CadL.Click += new System.EventHandler(this.btn_CadL_Click);
+            this.btnCad.BackColor = System.Drawing.Color.White;
+            this.btnCad.BorderRadius = 6;
+            this.btnCad.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCad.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCad.FillColor = System.Drawing.Color.DarkCyan;
+            this.btnCad.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCad.ForeColor = System.Drawing.Color.White;
+            this.btnCad.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCad.Location = new System.Drawing.Point(291, 698);
+            this.btnCad.Name = "btnCad";
+            this.btnCad.Size = new System.Drawing.Size(227, 45);
+            this.btnCad.TabIndex = 34;
+            this.btnCad.Text = "Cadastro";
+            this.btnCad.Click += new System.EventHandler(this.btn_CadL_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(1224, 3);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(49, 51);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 40;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
+            this.guna2Panel1.Controls.Add(this.lblCadL);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1276, 100);
+            this.guna2Panel1.TabIndex = 31;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.guna2Panel2.Controls.Add(this.btnHomeP);
+            this.guna2Panel2.Controls.Add(this.btn_ListLivro);
+            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 100);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(250, 685);
+            this.guna2Panel2.TabIndex = 32;
             // 
             // FrmCadLivro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1276, 785);
-            this.Controls.Add(this.btn_CadL);
-            this.Controls.Add(this.lblCadL);
-            this.Controls.Add(this.guna2Panel4);
+            this.Controls.Add(this.guna2Panel2);
+            this.Controls.Add(this.btnCad);
             this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.guna2Panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCadLivro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCadLivro";
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
+            this.Load += new System.EventHandler(this.FrmCadLivro_Load);
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button btn_ListLivro;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Button btnHomeP;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2TextBox txbQuantidade;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblQunt;
-        private Guna.UI2.WinForms.Guna2TextBox txbDtP;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
         private Guna.UI2.WinForms.Guna2TextBox txbEdicao;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
@@ -339,6 +370,10 @@ namespace SYSBIBLIO.View
         private Guna.UI2.WinForms.Guna2TextBox txbNomeL;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCadL;
-        private Guna.UI2.WinForms.Guna2Button btn_CadL;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dt_DataP;
+        private Guna.UI2.WinForms.Guna2Button btnCad;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
     }
 }
